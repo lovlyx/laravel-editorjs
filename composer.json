@@ -1,41 +1,35 @@
 {
-	"name": "alaminfirdows/laravel-editorjs",
-	"description": "A simple editor.js html parser for Laravel",
-	"type": "library",
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Al-Amin Firdows",
-			"email": "alaminfirdows@gmail.com"
-		}
-	],
-	"require": {
-		"php": "^7.2|^8.1",
-		"codex-team/editor.js": "v2.0.7",
-		"illuminate/support": "^8.0|^9.0|^10.0"
-	},
-	"require-dev": {
-		"orchestra/testbench": "^6.0",
-		"phpunit/phpunit": "^9.5"
-	},
-	"autoload": {
-		"psr-4": {
-			"AlAminFirdows\\LaravelEditorJs\\": "src/"
-		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"AlAminFirdows\\LaravelEditorJs\\Tests\\": "tests/"
-		}
-	},
+    "name": "alaminfirdows/laravel-editorjs",
+    "description": "A simple editor.js html parser for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "codex-team/editor.js": "v2.0.7",
+        "illuminate/support": "^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlAminFirdows\\LaravelEditorJs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AlAminFirdows\\LaravelEditorJs\\Tests\\": "tests/"
+        }
+    },
     "scripts": {
         "test": "./vendor/bin/phpunit"
     },
-	"extra": {
-		"laravel": {
-			"providers": [
-				"AlAminFirdows\\LaravelEditorJs\\LaravelEditorJsServiceProvider"
-			]
-		}
-	}
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlAminFirdows\\LaravelEditorJs\\LaravelEditorJsServiceProvider"
+            ]
+        }
+    }
 }
